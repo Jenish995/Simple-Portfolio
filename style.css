@@ -91,8 +91,12 @@ section{
     transition: width 0.3s cubic-bezier(.4,0,.2,1);
 }
 
-.navbar a:hover::after,
-.navbar a:focus::after {
+.navbar a:hover::after {
+    width: 100%;
+}
+
+/* active link stays underlined */
+.navbar a.active::after {
     width: 100%;
 }
 /* .navbar a.active{

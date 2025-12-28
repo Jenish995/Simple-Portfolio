@@ -17,3 +17,13 @@ const typed = new Typed('.Multiple-text', {
     backDelay:1200,
     loop:true,
 });
+
+//Underline stays on the current section until another one is pressed 
+const navLinks = document.querySelectorAll('.navbar a');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+    });
+  });
