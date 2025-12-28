@@ -91,6 +91,7 @@ section{
     transition: width 0.3s cubic-bezier(.4,0,.2,1);
 }
 
+/* hover effect */
 .navbar a:hover::after {
     width: 100%;
 }
@@ -99,6 +100,7 @@ section{
 .navbar a.active::after {
     width: 100%;
 }
+
 /* .navbar a.active{
   background: var(--bg-color);    
 } */
